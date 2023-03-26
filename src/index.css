@@ -1,13 +1,82 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: rgb(100, 100, 249);
+}
+
+.heading_style{
+  padding: 15px 0;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 25 px;
+  background-color: #deb887;
+  color: #0b3638;
+}
+
+.cards{
+  width: 100%;
+  height: auto;
+}
+
+/* .heading{
+  color: aqua;
+} */
+
+.card{
+  margin: 5% 6%;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: darkcyan;
+  width: 20%;
+  border-radius: 15px;
+  box-shadow: 0px 14px 10px -7px #f0ffff;
+  float: left;  
+}
+
+.card__img{
+  width: 100%;
+  height: 250px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__info{
+  background-color: #f0ffff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px 25px 25px 25px;
+}
+
+.card__category{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #035656;
+}
+
+.card__title{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+  padding: 5px 8px;
+  border: none;
+  background-color: #000000;
+  color: #ffebcd;
+  cursor: pointer;
+}
+
+.card:hover{
+  background-color: blueviolet;
+  transform: scale(1.05);
 }
